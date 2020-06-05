@@ -28,21 +28,21 @@ app.use(express.static(publicDirPath))
 app.get('', (req, res) => {
 	res.render('index', {
 		title: 'Weather App',
-		name: 'Ark'
+		name: 'Arkvik'
 	})
 })
 
 app.get('/about', (req, res) => {
 	res.render('about', {
 		title: 'About',
-		name: 'Ark'
+		name: 'Arkvik'
 	})
 })
 
 app.get('/help', (req, res) => {
 	res.render('help', {
 		title: 'Help page',
-		name: 'Ark'
+		name: 'Arkvik'
 	})
 })
 
@@ -76,7 +76,7 @@ app.get('/help/*', (req, res) => {
 	res.render('notFound', {
 		title: 'Oops!',
 		message: 'Sorry, help article not found',
-		name: 'Ark'
+		name: 'Arkvik'
 	})
 })
 
@@ -84,7 +84,7 @@ app.get('*', (req, res) => {
 	res.render('notFound', {
 		title: 'Oops!',
 		message: 'Sorry, page not found',
-		name: 'Ark'
+		name: 'Arkvik'
 	})
 })
 

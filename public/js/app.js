@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
 			return msgError.textContent = data.error
 		}
 		msgError.textContent = data['location found']
-		msgWeather.textContent = `Weather is ${data.weather}. Temperature is ${data.temperature}, humidity is ${data.humidity}`
+		msgWeather.textContent = `Weather is ${data.weather}. Temperature is ${data.temperature} degrees Celcius, humidity is ${data.humidity}%`
 	}).catch((error) => {
 		msgError.textContent = error
 	})
